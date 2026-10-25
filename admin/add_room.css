@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1ecd8;
+  margin: 0;
+  padding: 0;
+}
+
+
+.page-title {
+  text-align: center;
+  color: #353326;
+  margin-top: 40px;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.form-container {
+  background-color: white;
+  width: 550px;
+  margin: 40px auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: #353326;
+  margin-bottom: 5px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+input:focus, select:focus {
+  border-color: #77bef0;
+  outline: none;
+}
+
+.button-group {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.confirm-btn {
+  background-color: #355326;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 15px;
+}
+
+.confirm-btn:hover {
+  background-color: #0b8a0b;
+}
+
+.cancel-btn {
+  background-color: #9f4955;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.cancel-btn:hover {
+  background-color: #d55661;
+}
+.success-message {
+      background-color: #d4edda;
+      color: #155724;
+      padding: 12px;
+      border: 1px solid #c3e6cb;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+    .error-message {
+      background-color: #f8d7da;
+      color: #721c24;
+      padding: 12px;
+      border: 1px solid #f5c6cb;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }

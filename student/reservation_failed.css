@@ -1,0 +1,107 @@
+/* ---------- GLOBAL ---------- */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #F1ECD8;
+}
+
+/* ---------- TOP BAR (จาก home.css) ---------- */
+.topbar {
+    background: #99B4B8;
+    padding: 18px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-area img {
+    height: 90px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right a {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 25px;
+}
+
+
+.divider {
+    width: 2px;
+    height: 25px;
+    background: white;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    background: black;
+    border-radius: 50%;
+}
+
+/* ========= FAIL PAGE CONTENT ========== */
+
+.failed-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.failed-card {
+    background: white;
+    width: 60%;
+    padding: 50px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.failed-title {
+    font-size: 70px;
+    color: #ea5b6f;
+    font-weight: bold;
+}
+
+.failed-box {
+    background: #94afb4;
+    padding: 35px;
+    border-radius: 30px;
+    margin: 40px auto;
+    width: 70%;
+    text-align: left;
+    color: white;
+    font-size: 22px;
+}
+
+.failed-box ul {
+    font-size: 22px;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.btn-home, .btn-contact {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 18px 40px;
+    border-radius: 40px;
+    color: white;
+    font-size: 22px;
+}
+
+.btn-home {
+    background: #c97a5b;
+}
+
+.btn-contact {
+    background: #7d865e;
+}

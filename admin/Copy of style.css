@@ -1,0 +1,157 @@
+
+/* === Unified Style Guide (Applied Globally) === */
+:root {
+    --bg:#f1ecd8; --card:#ffffff;
+    --yellow:#ffe28a; --orange:#ff894f; --red:#ea5b6f;
+    --blue:#77bef0; --navy:#527289; --pink:#9f4955;
+    --shadow-sm:0 2px 4px rgba(0,0,0,0.1);
+    --shadow-md:0 4px 12px rgba(0,0,0,0.15);
+    --shadow-lg:0 8px 24px rgba(0,0,0,0.15);
+    --radius-sm:6px; --radius-md:10px; --radius-lg:20px;
+}
+*{box-sizing:border-box;font-family:Inter,ui-sans-serif,Arial,sans-serif;}
+body{margin:0;background:var(--bg);}
+.card{background:var(--card);border-radius:var(--radius-md);padding:20px;box-shadow:var(--shadow-md);}
+.centered-container{width:min(90%,450px);margin:40px auto;}
+.topbar{background:var(--blue);padding:10px 20px;color:#fff;display:flex;align-items:center;justify-content:space-between;box-shadow:var(--shadow-sm);}
+.topbar a{color:#fff;text-decoration:none;font-weight:600;}
+.btn-primary{background:var(--blue);color:#fff;padding:10px 14px;border-radius:var(--radius-sm);border:none;cursor:pointer;transition:.2s;}
+.btn-primary:hover{opacity:.9;}
+input,select,textarea{width:100%;padding:10px;border-radius:var(--radius-sm);border:1px solid #ccc;margin-bottom:15px;font-size:1rem;}
+table{width:100%;border-collapse:collapse;background:var(--card);border-radius:var(--radius-md);overflow:hidden;box-shadow:var(--shadow-sm);}
+th,td{padding:12px 16px;border-bottom:1px solid #ddd;}
+th{background:var(--blue);color:#fff;text-align:left;}
+
+
+/* === Original Class Names (Values Rewritten by Unified Guide) === */
+
+/* การกำหนดสีหลักจากโจทย์ */
+:root {
+    --color-yellow: #ffe28a; /* พื้นหลังฟอร์ม */
+    --color-orange: #ff894f; /* ปุ่ม Login */
+    --color-red: #ea5b6f;    /* Title */
+    --color-blue: #77bef0;   /* ปุ่ม Signup */
+}
+
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header & Logo */
+.main-header {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* **CSS ใหม่สำหรับโลโก้** */
+.logo-image {
+    height: auto;
+    width: 250px; /* กำหนดขนาดให้มองเห็นได้ชัด */
+    max-width: 100%; 
+    display: block;
+}
+
+/* Content Wrapper: จัดให้ฟอร์มอยู่กึ่งกลางหน้าจอแนวดิ่งและแนวนอน */
+.content-wrapper {
+    flex-grow: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+/* Login Container: กรอบฟอร์มสีเหลือง */
+.login-container {
+    padding: 40px 50px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 400px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    background-color: var(--color-yellow);
+    text-align: left; 
+}
+
+.main-title {
+    color: var(--color-red);
+    margin-bottom: 25px;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Form Styles */
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 25px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+/* Buttons */
+.btn {
+    width: 100%;
+    padding: 15px 10px; 
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn-login {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background-color: var(--color-orange);
+}
+
+/* ลิงก์ย่อย และปุ่ม SIGNUP */
+.signup-link-section {
+    margin-top: 15px;
+    text-align: center; 
+}
+
+.small-link {
+    margin: 0 0 10px 0;
+    font-size: 0.9em;
+    color: #333;
+}
+
+.btn-signup {
+    width: 90%;
+    display: block;
+    margin: 10px auto; 
+    padding: 15px;
+    background-color: var(--color-blue);
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 20px;
+    color: #333;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}

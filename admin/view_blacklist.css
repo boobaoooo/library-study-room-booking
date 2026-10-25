@@ -1,0 +1,146 @@
+:root {
+  --bg: #f1ecd8;
+  --card: #fff;
+  --accent: #355326;
+  --danger: #9f4955;
+  --shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+body {
+  background: var(--bg);
+  font-family: "Inter", Arial, sans-serif;
+  margin: 0;
+}
+
+.page-title{
+  text-align:center;
+  font-size:2rem;
+  margin-top:30px;
+  color:#353326;
+  text-transform:uppercase;
+}
+
+.back-section{
+  margin:20px;
+}
+.back-btn{
+  text-decoration:none;
+  font-size:1rem;
+  color:var(--accent);
+  font-weight:700;
+}
+
+.smain{
+  max-width:1100px;
+  margin:0 auto;
+  padding:20px;
+}
+
+.sm-actions{
+  display:flex;
+  gap:10px;
+  margin-bottom:20px;
+  justify-content:flex-end;
+}
+
+.btn{
+  padding:10px 14px;
+  border:none;
+  border-radius:8px;
+  font-weight:700;
+  cursor:pointer;
+  color:white;
+}
+
+.btn.primary{ background:var(--accent); }
+.btn.danger{ background:var(--danger); }
+
+.sm-table-container{
+  background:var(--card);
+  box-shadow:var(--shadow);
+  padding:20px;
+  border-radius:12px;
+  max-height:520px;
+  overflow:auto;
+}
+
+.sm-table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+.sm-table thead th{
+  background: linear-gradient(90deg,#f1ecd8,#c46d52);
+  color:#353326;
+  padding:10px;
+  position:sticky;
+  top:0;
+}
+
+.sm-table td{
+  padding:10px;
+  border-bottom:1px solid #ddd;
+  text-align:center;
+}
+
+.editable{
+  width:100%;
+  padding:6px;
+  border:1px solid #ccc;
+  border-radius:6px;
+}
+
+.status-dropdown{
+  padding:6px;
+  border-radius:6px;
+}
+
+.loading,.error{
+  text-align:center;
+  padding:20px;
+}
+
+.sm-modal{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.3);
+  align-items:center;
+  justify-content:center;
+  z-index:1000;
+}
+
+.sm-modal-content{
+  background:white;
+  padding:20px;
+  width:400px;
+  border-radius:12px;
+  box-shadow:var(--shadow);
+  position:relative;
+}
+
+.sm-modal-close{
+  position:absolute;
+  top:10px;
+  right:10px;
+  font-size:18px;
+  border:none;
+  background:none;
+  cursor:pointer;
+}
+
+.sm-modal-actions{
+  margin-top:20px;
+  display:flex;
+  justify-content:center;
+  gap:10px;
+}
+
+.success{
+  color:green;
+  font-weight:700;
+}
+.error{
+  color:red;
+  font-weight:700;
+}

@@ -1,0 +1,135 @@
+/* ===================== GLOBAL ===================== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #F1ECD8;
+}
+
+/* ===================== PAGE TITLE ===================== */
+h1 {
+    text-align: center;
+    font-size: 65px;
+    color: #3C3C3C;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* ===================== SECTION TITLE ===================== */
+.section-title {
+    width: 75%;
+    margin: 25px auto 10px auto;
+    color: #6D6D6D;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/* ===================== TABLE ===================== */
+table {
+    width: 75%;
+    margin: 10px auto 40px auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+th {
+    background: #7C7D5E;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    font-size: 16px;
+}
+
+td {
+    background: white;
+    padding: 14px;
+    text-align: center;
+    border-bottom: 1px solid #E2E2E2;
+    font-size: 15px;
+}
+
+tr:nth-child(even) td {
+    background: #FAF8F2;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* ===================== STATUS BADGES ===================== */
+.status {
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    display: inline-block;
+}
+
+.status.pending {
+    background: #FFD8A8;
+    color: #A65E00;
+}
+
+.status.active {
+    background: #C7F3C0;
+    color: #256029;
+}
+
+.status.cancelled {
+    background: #FFCDD2;
+    color: #B71C1C;
+}
+
+.status.completed {
+    background: #BBDEFB;
+    color: #0D47A1;
+}
+
+/* ===================== CANCEL BUTTON ===================== */
+.btn-cancel {
+    background: #FF6C4B;
+    color: white;
+    padding: 6px 15px;
+    font-size: 13px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.15s ease;
+}
+
+.btn-cancel:hover {
+    background: #FF5430;
+}
+
+/* ===================== DISABLED BUTTON ===================== */
+.btn-disabled {
+    background: #C7C7C7;
+    color: #555;
+    padding: 6px 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 13px;
+    cursor: not-allowed;
+    font-weight: bold;
+}
+
+/* ===================== WARNING BOX ===================== */
+.warning-box {
+    width: 75%;
+    margin: 20px auto 0 auto;
+    padding: 15px;
+    background: #FFF3CD;
+    border-left: 6px solid #E0A800;
+    color: #856404;
+    border-radius: 6px;
+}
+
+.warning-box.danger {
+    background: #F8D7DA;
+    border-left: 6px solid #C82333;
+    color: #842029;
+}

@@ -1,0 +1,140 @@
+/* style.css */
+:root {
+    --color-primary: #77bef0;    /* ฟ้า */
+    --color-secondary: #ff894f;  /* ส้ม */
+    --color-warning: #ea5b6f;    /* แดง */
+    --color-highlight: #ffe28a;  /* เหลือง */
+    --color-text: #333;
+    --color-background: #f4f7f6;
+    --color-success: #28a745;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Tahoma', 'Arial', sans-serif; 
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+/* --- Navigation Bar (Tab Bar) --- */
+.navbar {
+    background-color: var(--color-primary);
+    padding: 10px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.navbar .logo-img {
+    height: 40px; /* ขนาดตามที่ต้องการ */
+    display: block; 
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.navbar .nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* --- Layouts --- */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* --- Forms & Inputs --- */
+.input-group {
+    margin-bottom: 15px;
+}
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.input-group input, .input-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* --- Buttons --- */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, opacity 0.3s;
+    text-decoration: none; /* สำหรับใช้กับแท็ก <a> */
+    display: inline-block;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #5aa4dc;
+}
+
+.btn-secondary {
+    background-color: var(--color-secondary);
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #d16b34;
+}
+
+.btn-danger {
+    background-color: var(--color-warning);
+    color: white;
+}
+.btn-danger:hover {
+    background-color: #c04859;
+}
+
+/* --- Utility/Alerts --- */
+.alert {
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.alert-success {
+    background-color: #d4edda;
+    color: var(--color-success);
+    border: 1px solid #c3e6cb;
+}
+.alert-error {
+    background-color: #f8d7da;
+    color: var(--color-warning);
+    border: 1px solid #f5c6cb;
+}

@@ -1,0 +1,174 @@
+/* booking_management.css - modernized and consistent with room_mnm style */
+:root{
+  --bg:#f1ecd8; --card:#fff; --accent:#355326; --danger:#9f4955; --primary:#77bef0;
+  --shadow: 0 8px 24px rgba(0,0,0,0.08);
+  --radius: 10px;
+}
+*{box-sizing:border-box}
+body{ margin:0; 
+  font-family: "Inter", Arial, sans-serif; 
+  background:var(--bg); 
+  color:#222; 
+}
+.bm-content{ 
+  padding:22px; 
+  max-width:1200px; 
+  margin:0 auto; }
+.bm-wrapper{ 
+  background:transparent; 
+}
+.bm-top h2{ 
+  text-align: center;
+  color: #353326;
+  margin-top: 40px;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+/* container */
+.bm-table-container{
+  background:var(--card);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  overflow:auto;
+  max-height:640px;
+  padding:12px;
+}
+
+/* table */
+.bm-table{ 
+  width:100%; 
+  border-collapse:collapse; 
+  min-width:900px; }
+.bm-table thead th{ 
+  position:sticky; top:0; 
+  background:linear-gradient(90deg,#f1ecd8,#c46d52); 
+  color:#fff; 
+  padding:14px; z-index:3; 
+}
+.bm-timehead{ 
+  width:160px; 
+  text-align:left; 
+  padding-left:16px; 
+  font-weight:700; 
+  background:#c46d52; 
+}
+.room-header-cell{ 
+    text-align:center; 
+    padding:12px; 
+    vertical-align:middle;
+    
+}
+
+/* room box */
+.room-box{ 
+    display:flex; 
+    flex-direction:column; 
+    align-items:center; 
+    gap:6px;
+     
+}
+.room-name{ 
+    font-weight:700; 
+    color: #353326; 
+}
+.room-cap{ 
+    font-size:0.85rem; 
+    color: #353326;
+    opacity:0.9; 
+}
+.room-equipment{ 
+    position:relative;
+}
+.equipment-link{ 
+    color: #353326;
+    text-decoration:underline; 
+    cursor:pointer; 
+    font-size:0.9rem; 
+}
+
+/* equipment popup */
+.equipment-popup{
+  display:none;
+  position:absolute;
+  top:26px;
+  left:50%;
+  transform:translateX(-50%);
+  background:#fff; 
+  color:#222;
+  padding:10px 12px; 
+  border-radius:8px; 
+  box-shadow:0 8px 18px rgba(0,0,0,0.12);
+  white-space:nowrap; 
+  z-index:50; 
+  font-size:0.9rem;
+}
+
+
+
+/* body cells */
+.bm-table tbody td{ 
+  border-bottom:1px solid #eee; 
+  padding:12px; 
+  vertical-align:top; 
+  text-align:center; }
+  
+.bm-slotcell{ 
+  background:#f2f0ea; 
+  font-weight:700; 
+  text-align:left; 
+  padding-left:16px; 
+  color:#333; }
+
+/* status, student, equipment rows inside each cell */
+.status-row{ margin-bottom:8px; }
+.status-select{ 
+  padding:6px 8px; 
+  border-radius:8px; 
+}
+.student-row input, .equip-row input { 
+  width:100%; 
+  padding:8px; 
+  border-radius:6px; 
+  border:1px solid #ddd; 
+  background:#fafafa; 
+}
+.btn-row{ 
+  margin-top:10px; 
+  display:flex; 
+  gap:8px; 
+  justify-content:center; 
+}
+.btn{ 
+  border:none; 
+  padding:8px 14px; 
+  border-radius:20px; 
+  font-weight:700; 
+  cursor:pointer;
+  color:#fff;
+}
+.btn.confirm{ 
+  background-color: #355326;
+   
+}
+.btn.confirm:hover{ 
+  background-color: #0b8a0b;
+  
+}
+.btn.cancel{ 
+  background-color: #9f4955;
+}
+.btn.cancel:hover{ 
+  background-color: #d55661;
+}
+/* small helpers */
+.loading, .error{ 
+  padding:22px; 
+  text-align:center; 
+  color:#666; 
+}
+
+/* responsive */
+@media (max-width:920px){
+  .bm-table{ min-width:700px; }
+}

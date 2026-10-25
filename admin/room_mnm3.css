@@ -1,0 +1,290 @@
+.edit-link.disabled {
+      color: #999;
+      text-decoration: none;
+      cursor: default;
+      opacity: 0.7;
+      position: relative;
+    }
+    .edit-link.disabled:hover::after {
+      content: attr(data-tooltip);
+      position: absolute;
+      bottom: -34px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #333;
+      color: #fff;
+      padding: 6px 8px;
+      border-radius: 6px;
+      white-space: nowrap;
+      font-size: 12px;
+      z-index: 9999;
+    }
+    .date-row {
+      display:flex;
+      justify-content:center;
+      gap:10px;
+      align-items:center;
+      margin:12px 0;
+    }
+    .date-picker {
+      padding:8px 12px;
+      border-radius:8px;
+      border:1px solid #ccc;
+      font-size:1rem;
+    }
+    /* room_mnm.css - table-only, modernized but keeping your colors */
+
+:root{
+  --bg: #f1ecd8;
+  --primary: #77bef0;
+  --accent: #355326;
+  --danger: #9f4955;
+  --card: #ffffff;
+  --muted: #d9d9d9;
+  --shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+.page-title {
+  text-align: center;
+  color: #353326;
+  margin-top: 40px;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+  background: var(--bg); color:#222;
+}
+.content-only{
+  padding: 22px 28px;
+}
+/* Actions */
+.table-actions{
+    text-align: center;
+    display:flex; 
+    justify-content:flex-end; 
+    gap:10px;
+    margin-top:10px;
+    justify-content: center;
+    
+
+}
+
+.btn{ padding:10px 14px;
+    border-radius:20px; 
+    font-weight:700; 
+    color:#fff; 
+    text-decoration:none; 
+    border:none; 
+    cursor:pointer; 
+}
+.add-room-btn {
+  background-color: #355326;
+}
+
+.add-room-btn:hover {
+  background-color: #0b8a0b;
+}
+.delete-room-btn {
+  background-color: #9f4955;
+}
+
+.delete-room-btn:hover {
+  background-color: #d55661;
+}
+/* Table container */
+.table-wrapper-only{ 
+    max-width:1200px; 
+    margin:0 auto;
+    
+}
+.table-container{
+  background:var(--card); 
+  border-radius:20px; 
+  box-shadow:var(--shadow); 
+  overflow-y:auto; 
+  padding:0;
+  max-height: 520px;         /* adjust height as needed */
+  overflow-x: auto;
+
+}
+
+/* Table */
+.room-table-only{ 
+    width:100%; 
+    border-collapse:collapse; 
+    min-width:900px; 
+}
+.room-table-only thead th{ 
+    position:sticky; top:0; 
+    background: linear-gradient(90deg,#f1ecd8,#c46d52); 
+    color:#353326; 
+    padding:14px; 
+    text-align:center; 
+    z-index:2; 
+}
+.selection-header{ 
+    width:60px; 
+    background:#353326; 
+    padding:14px; 
+}
+.time-header{ 
+    width:160px; 
+    background:#c46d52; 
+    padding:14px; 
+    text-align:left; 
+    padding-left:18px; 
+    color:#fff; 
+    font-weight:700; 
+}
+.room-header-cell{ 
+    text-align:center; 
+    padding:12px; 
+    vertical-align:middle;
+    
+}
+
+/* room box inside header */
+.room-box{ 
+    display:flex; 
+    flex-direction:column; 
+    align-items:center; 
+    gap:6px;
+     
+}
+.room-name{ 
+    font-weight:700; 
+    color: #353326; 
+}
+.room-cap{ 
+    font-size:0.85rem; 
+    color: #353326;
+    opacity:0.9; 
+}
+.room-equipment{ 
+    position:relative;
+}
+.equipment-link{ 
+    color: #353326;
+    text-decoration:underline; 
+    cursor:pointer; 
+    font-size:0.9rem; 
+}
+
+/* equipment popup */
+.equipment-popup{
+  display:none;
+  position:absolute;
+  top:26px;
+  left:50%;
+  transform:translateX(-50%);
+  background:#fff; 
+  color:#222;
+  padding:10px 12px; 
+  border-radius:8px; 
+  box-shadow:0 8px 18px rgba(0,0,0,0.12);
+  white-space:nowrap; 
+  z-index:50; 
+  font-size:0.9rem;
+}
+
+
+/* body rows */
+.room-table-only tbody td{ 
+    padding:12px; 
+    border-bottom:1px solid #eee; 
+    text-align:center; 
+    vertical-align:middle; 
+}
+.timeslot-cell{ 
+    text-align:left; 
+    padding-left:18px; 
+    font-weight:600; 
+    color:#333; 
+    background:#faf7f0; 
+    width:160px; 
+}
+.slot-cell{ min-width:140px; }
+
+/* slot status badges */
+.slot-status{ 
+    display:inline-block; 
+    padding:6px 10px; 
+    border-radius:999px; 
+    font-weight:700; 
+    margin-bottom:8px; 
+    font-size:0.9rem; 
+}
+.slot-status.available{ 
+    background:#e9f9ff; 
+    color:#0077aa; 
+    border:1px solid rgba(0,119,170,0.12); 
+}
+.slot-status.unavailable{ 
+    background:#fff0f0; 
+    color:#9f4955; 
+    border:1px solid rgba(159,73,85,0.12); 
+}
+
+/* edit link */
+.edit-link{ 
+    display:block; 
+    font-size:0.85rem; 
+    color:var(--accent);
+    text-decoration:underline; 
+    margin-top:6px; 
+    cursor:pointer; 
+}
+
+/* modal */
+.modal{ 
+    display:none; 
+    position:fixed; 
+    inset:0; 
+    align-items:center; 
+    justify-content:center; 
+    background:rgba(0,0,0,0.3); 
+    z-index:200; 
+}
+.modal[aria-hidden="false"]{ display:flex; }
+.modal-content{ 
+    width:420px; 
+    max-width:92%; 
+    background:#fff; 
+    padding:18px; 
+    border-radius:12px; 
+    box-shadow:0 12px 30px rgba(0,0,0,0.12); 
+    position:relative; 
+}
+.modal-close{ 
+    position:absolute; 
+    right:12px; top:8px; 
+    background:none; 
+    border:none; 
+    font-size:18px; 
+    cursor:pointer; 
+}
+.modal-actions{ 
+    display:flex; 
+    gap:10px; 
+    justify-content:flex-end; 
+    margin-top:12px; 
+}
+.btn.primary{ 
+    background:var(--accent); 
+    color:#fff; 
+}
+.btn.danger{ 
+    background:var(--danger); 
+    color:#fff; 
+}
+.modal-msg{ 
+    margin-top:10px; 
+    color:#333; 
+    font-size:0.95rem; 
+}
+.loading, .error{ 
+    padding:22px; 
+    text-align:center; 
+    color:#666; 
+}

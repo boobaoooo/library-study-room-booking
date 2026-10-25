@@ -1,0 +1,91 @@
+:root{
+  --bg:#f1ecd8;
+  --primary:#77bef0;
+  --accent:#355326;
+  --danger:#9f4955;
+  --card:#fff;
+  --shadow:0 8px 24px rgba(0,0,0,0.08);
+}
+
+*{ box-sizing:border-box; }
+body{ margin:0; font-family:"Inter",Arial,sans-serif; background:var(--bg); }
+
+.page-title{
+  text-align:center;
+  margin-top:25px;
+  color:#353326;
+  font-size:2rem;
+  text-transform:uppercase;
+}
+
+.date-section{
+  margin:20px auto;
+  text-align:center;
+}
+
+.date-picker{
+  padding:10px;
+  border-radius:8px;
+  border:2px solid var(--accent);
+}
+
+.btn{
+  padding:10px 16px;
+  border-radius:8px;
+  border:none;
+  cursor:pointer;
+  font-weight:700;
+  margin-left:10px;
+}
+
+.btn.primary{ 
+  background:var(--accent); 
+  color:white; 
+}
+.btn.primary:hover {
+  background-color: #0b8a0b;
+}
+.btn.danger{ 
+  background:var(--danger); 
+  color:white; 
+}
+.btn.danger:hover {
+  background-color: #d55661;
+}
+
+.table-container{
+  width:90%;
+  margin:20px auto;
+  background:var(--card);
+  padding:20px;
+  border-radius:14px;
+  box-shadow:var(--shadow);
+  max-height:500px;
+  overflow:auto;
+}
+
+.history-table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+.history-table thead th{
+  position:sticky; top:0; 
+  background: linear-gradient(90deg,#f1ecd8,#c46d52); 
+  color:#353326; 
+  padding:14px; 
+  text-align:center; 
+  z-index:2; 
+}
+
+.history-table tbody td{
+  padding:10px;
+  border-bottom:1px solid #ddd;
+  text-align:center;
+}
+
+.loading, .error{
+  text-align:center;
+  padding:20px;
+  color:#555;
+}

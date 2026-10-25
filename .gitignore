@@ -1,0 +1,23 @@
+# ---- User-uploaded files (runtime data, keep out of the repo) ----
+uploads/*
+!uploads/.gitkeep
+!uploads/.htaccess
+!uploads/default.jpg
+
+# ---- OS / editor junk ----
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+.idea/
+.vscode/
+
+# ---- Logs & temp ----
+*.log
+*.tmp
+*.bak
+
+# ---- Local environment (uncomment if you move DB creds to a local file) ----
+# db.local.php
+# .env

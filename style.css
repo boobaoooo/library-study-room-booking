@@ -1,0 +1,147 @@
+/* การกำหนดสีหลักจากโจทย์ */
+:root {
+    --color-yellow: #ffe28a; /* พื้นหลังฟอร์ม */
+    --color-orange: #ff894f; /* ปุ่ม Login */
+    --color-red: #ea5b6f;    /* Title */
+    --color-blue: #77bef0;   /* ปุ่ม Signup */
+}
+
+/* Base Styles */
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+
+    /* NEW: ใช้ flex-column แต่ให้งานหลักอยู่กลางจอ */
+    display: flex;
+    flex-direction: column;
+    align-items: center;       /* จัดแนวนอนให้กลาง */
+    min-height: 100vh;
+}
+
+/* Header & Logo */
+/* Header & Logo */
+.main-header {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+
+    /* NEW: จัดโลโก้ไว้ตรงกลาง */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+
+/* **CSS ใหม่สำหรับโลโก้** */
+.logo-image {
+    height: auto;
+    width: 200px; /* กำหนดขนาดให้มองเห็นได้ชัด */
+    max-width: 100%; 
+    display: block;
+    margin-left: 0;
+}
+
+/* Content Wrapper: จัดให้ฟอร์มอยู่กึ่งกลางหน้าจอแนวดิ่งและแนวนอน */
+.content-wrapper {
+    flex-grow: 1; 
+    display: flex;
+    justify-content: center;  /* กลางแนวนอน */
+    align-items: center;       /* กลางแนวตั้ง */
+    width: 100%;
+    padding: 20px 0;
+    padding-bottom: 50px;
+    margin-top: 0; 
+}
+
+
+/* Login Container: กรอบฟอร์มสีเหลือง */
+.login-container {
+    padding: 10px 25px 20px;     /* ลดความหนาของขอบด้านใน */
+    border-radius: 15px;
+    width: 90%;
+    max-width: 300px;       /* กล่องเล็กลงจากเดิม 400px → 300px */
+    background-color: #99B4B8;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+.main-title {
+    color: #353326;
+    margin-bottom: 25px;
+    font-size: 1.75em;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Form Styles */
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-sizing: border-box;
+    font-size: 0.9em;
+}
+
+/* Buttons */
+.btn {
+    width: 100%;
+    padding: 12px; 
+    border: none;
+    border-radius: 24px;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn-login {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background-color: #828468;
+}
+
+/* ลิงก์ย่อย และปุ่ม SIGNUP */
+.signup-link-section {
+    margin-top: 5px;
+    text-align: center; 
+}
+
+.small-link {
+    margin: 0 0 10px 0;
+    font-size: 0.9em;
+    color: #333;
+}
+
+.btn-signup {
+    width: 90%;
+    display: block;
+    margin: 10px auto; 
+    padding: 15px;
+    background-color: #CB7E5B;
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 20px;
+    color: #333;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
